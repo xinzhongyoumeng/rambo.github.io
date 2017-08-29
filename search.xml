@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[采用virt-install方式制作OpenStack镜像]]></title>
+    <url>%2F2017%2F08%2F28%2F%E5%88%B6%E4%BD%9COpenStack%E9%95%9C%E5%83%8F%2F</url>
+    <content type="text"><![CDATA[声明：本文档以Ubuntu14.04为基础ps:如果您不希望使用virt-manager（例如，您不想在服务器上安装依赖项，则您没有在本地运行X服务器，X11通过SSH转发不起作用），您可以使用virt-install工具通过libvirt启动虚拟机，并从安装在本地计算机上的VNC客户端连接到图形控制台。 制作Ubuntu镜像ps:制作centos则采用qemu方式速度太慢，故制作ubuntu镜像参考 检测系统是否支持KVM（数字为0表示不支持，反之亦然）1$ egrep -c '(vmx|svm)' /proc/cpuinfo 更新软件包索引与更新软件1$ apt update &amp;&amp; apt dist-upgrade -y]]></content>
+      <categories>
+        <category>OpenStack</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[安装Docker]]></title>
-    <url>%2F2017%2F08%2F26%2F%E5%AE%89%E8%A3%85Docker%2F</url>
+    <url>%2F2017%2F08%2F28%2F%E5%AE%89%E8%A3%85Docker%2F</url>
     <content type="text"><![CDATA[声明：本安装文档以Ubuntu14.04为基础 前期准备1.更新系统1$ apt-get update 2.安装CA证书1$ apt-get install apt-transport-https ca-certificates 3.添加一个新的GPG键（GPG是加密和数字签名的免费工具，大多用于加密信息的传递）1$ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D 4.添加源12vim /etc/apt/sources.list.d/docker.listdeb https://apt.dockerproject.org/repo ubuntu-trusty main 5.更新系统1$ apt-get update 6.获取可用的Docker版本1$ apt-cache policy docker-engine 7.安装推荐的包1$ apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual 8.安装额外的包1$ apt-get install linux-image-generic-lts-trusty 9.对包进行更新1$ apt-get update 安装docker1.对包进行更新1$ apt-get update 2.安装引1$ apt-get install docker-engine 配置DaoCloud的Docker加速器(国内registry-mirror)1.DaoCloud的Docker Hub Mirror服务可代替Docker官网的Docker Hub登录DaoCloud官网,注册用户并登录 2.获取添加加速器命令登录以后进入管理界面点击“加速器”标签，会弹出页面配置加速器中产生的命令，然后将此命令复制到linux的命令行中执行 3.重启Docker服务1$ service docker restart 验证操作1.查看docker版本1$ docker -v 2.启动docker守护进程1$ service docker start 3.验证docker是否正确安装1$ docker run hello-world ps:此命令下载的是一个测试镜像，它打印“Hello from Docker!”消息结束后退出。]]></content>
       <categories>
         <category>Docker</category>

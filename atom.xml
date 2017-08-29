@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-08-26T15:31:58.034Z</updated>
+  <updated>2017-08-29T02:15:51.197Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -16,11 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>采用virt-install方式制作OpenStack镜像</title>
+    <link href="https://www.superdocker.cn/2017/08/28/%E5%88%B6%E4%BD%9COpenStack%E9%95%9C%E5%83%8F/"/>
+    <id>https://www.superdocker.cn/2017/08/28/制作OpenStack镜像/</id>
+    <published>2017-08-29T02:15:51.197Z</published>
+    <updated>2017-08-29T02:15:51.197Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;声明：本文档以Ubuntu14.04为基础&lt;/em&gt;&lt;br&gt;ps:如果您不希望使用virt-manager（例如，您不想在服务器上安装依赖项，则您没有在本地运行X服务器，X11通过SSH转发不起作用），您可以使用virt-install工具通过libvirt启动虚拟
+    
+    </summary>
+    
+      <category term="OpenStack" scheme="https://www.superdocker.cn/categories/OpenStack/"/>
+    
+    
+      <category term="教程" scheme="https://www.superdocker.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>安装Docker</title>
-    <link href="https://www.superdocker.cn/2017/08/26/%E5%AE%89%E8%A3%85Docker/"/>
-    <id>https://www.superdocker.cn/2017/08/26/安装Docker/</id>
-    <published>2017-08-26T15:31:58.034Z</published>
-    <updated>2017-08-26T15:31:58.034Z</updated>
+    <link href="https://www.superdocker.cn/2017/08/28/%E5%AE%89%E8%A3%85Docker/"/>
+    <id>https://www.superdocker.cn/2017/08/28/安装Docker/</id>
+    <published>2017-08-29T02:15:44.276Z</published>
+    <updated>2017-08-29T02:15:44.276Z</updated>
     
     <summary type="html">
     
