@@ -118,12 +118,10 @@
 <meta property="og:url" content="https://www.superdocker.cn/2017/09/12/部署Ceph及与OpenStack结合/index.html">
 <meta property="og:site_name" content="Rambo&#39;s Blog">
 <meta property="og:description" content="声明：本安装文档以CentOS 7+ 或 Ubuntu 14+为基础 本文转载自王宇霄博客，感谢霄哥指导前期准备在安装ceph之前推荐把所有的ceph节点设置成无需密码ssh互访，配置hosts支持主机名互访，同步好时间，并关闭iptables和selinux。deploy节点是配置ceph，并不安装ceph实验环境：  1controller     deploy  &amp;amp; OSD">
-<meta property="og:image" content="http://oo4f6qp0z.bkt.clouddn.com/%E5%AE%8C%E6%88%9013.png">
-<meta property="og:updated_time" content="2017-09-12T14:02:03.895Z">
+<meta property="og:updated_time" content="2017-09-12T14:04:17.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署Ceph及与OpenStack结合">
 <meta name="twitter:description" content="声明：本安装文档以CentOS 7+ 或 Ubuntu 14+为基础 本文转载自王宇霄博客，感谢霄哥指导前期准备在安装ceph之前推荐把所有的ceph节点设置成无需密码ssh互访，配置hosts支持主机名互访，同步好时间，并关闭iptables和selinux。deploy节点是配置ceph，并不安装ceph实验环境：  1controller     deploy  &amp;amp; OSD">
-<meta name="twitter:image" content="http://oo4f6qp0z.bkt.clouddn.com/%E5%AE%8C%E6%88%9013.png">
 
 
 
@@ -349,7 +347,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-12T22:02:03+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-12T10:04:17-04:00">
                 2017-09-12
               </time>
             
@@ -572,8 +570,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">[DEFAULT]     （直接添加)</div><div class="line">enabled_backends = ceph</div><div class="line">backup_driver = cinder.backup.drivers.ceph</div><div class="line">backup_ceph_conf = /etc/ceph/ceph.conf</div><div class="line">backup_ceph_user = cinder-backup</div><div class="line">backup_ceph_chunk_size = 134217728</div><div class="line">backup_ceph_pool = backups</div><div class="line">backup_ceph_stripe_unit = 0</div><div class="line">backup_ceph_stripe_count = 0</div><div class="line">restore_discard_excess_bytes = true</div><div class="line"></div><div class="line">[ceph]</div><div class="line">volume_driver = cinder.volume.drivers.rbd.RBDDriver</div><div class="line">rbd_pool = volumes</div><div class="line">rbd_ceph_conf = /etc/ceph/ceph.conf</div><div class="line">rbd_flatten_volume_from_snapshot = false</div><div class="line">rbd_max_clone_depth = 5</div><div class="line">rbd_store_chunk_size = 4</div><div class="line">rados_connect_timeout = -1</div><div class="line">glance_api_version = 2</div><div class="line">rbd_user = cinder</div><div class="line">rbd_secret_uuid = UUID</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sed -i <span class="string">"s#UUID#<span class="variable">$&#123;UUID&#125;</span>#g"</span> /etc/cinder/cinder.conf</div></pre></td></tr></table></figure>
 <h4 id="重启服务-2"><a href="#重启服务-2" class="headerlink" title="重启服务"></a>重启服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">service cinder-api restart</div><div class="line">service cinder-scheduler restart</div><div class="line">service cinder-volume restart</div><div class="line">service cinder-backup restart</div><div class="line">service tgt restart</div><div class="line"></div><div class="line">centos系统：</div><div class="line">systemctl restart openstack-cinder-volume.service target.service</div></pre></td></tr></table></figure>
-<h4 id="结果查看"><a href="#结果查看" class="headerlink" title="结果查看"></a>结果查看</h4><p><img src="http://oo4f6qp0z.bkt.clouddn.com/%E5%AE%8C%E6%88%9013.png" alt="image"></p>
-<h3 id="测试操作"><a href="#测试操作" class="headerlink" title="测试操作"></a>测试操作</h3><h4 id="获取Ceph的存储使用率"><a href="#获取Ceph的存储使用率" class="headerlink" title="获取Ceph的存储使用率"></a>获取Ceph的存储使用率</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ceph df</div></pre></td></tr></table></figure>
+<h4 id="结果查看"><a href="#结果查看" class="headerlink" title="结果查看"></a>结果查看</h4><h3 id="测试操作"><a href="#测试操作" class="headerlink" title="测试操作"></a>测试操作</h3><h4 id="获取Ceph的存储使用率"><a href="#获取Ceph的存储使用率" class="headerlink" title="获取Ceph的存储使用率"></a>获取Ceph的存储使用率</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ceph df</div></pre></td></tr></table></figure>
 <h4 id="下载镜像源"><a href="#下载镜像源" class="headerlink" title="下载镜像源"></a>下载镜像源</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http://172.18.20.100/img/raw/ubuntu/ubuntu-16.04-server.raw</div></pre></td></tr></table></figure>
 <h4 id="上传镜像"><a href="#上传镜像" class="headerlink" title="上传镜像"></a>上传镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openstack image create <span class="string">"ubuntu-16"</span> --file ubuntu-16.04-server.raw --disk-format raw --container-format bare --public</div></pre></td></tr></table></figure>
 <h4 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openstack image list</div></pre></td></tr></table></figure>
