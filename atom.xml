@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-09-25T15:08:53.307Z</updated>
+  <updated>2017-09-25T15:11:50.625Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -16,18 +16,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>磁盘文件系统的选择</title>
     <link href="https://www.superdocker.cn/2017/09/25/Disk%20format%20choise/"/>
     <id>https://www.superdocker.cn/2017/09/25/Disk format choise/</id>
-    <published>2017-09-25T15:08:53.307Z</published>
-    <updated>2017-09-25T15:08:53.307Z</updated>
+    <published>2017-09-25T15:11:50.625Z</published>
+    <updated>2017-09-25T15:11:50.625Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;磁盘文件系统的选择&quot;&gt;&lt;a href=&quot;#磁盘文件系统的选择&quot; class=&quot;headerlink&quot; title=&quot;磁盘文件系统的选择&quot;&gt;&lt;/a&gt;磁盘文件系统的选择&lt;/h1&gt;&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; 
+      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;我们在Windows系统里格式化磁盘的时候，文件系统的选项里可以看到有“FAT”、“FAT32”、“NTFS”、“REFS”等选项，在对U盘
     
     </summary>
     
+      <category term="磁盘文件系统" scheme="https://www.superdocker.cn/categories/%E7%A3%81%E7%9B%98%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="硬件" scheme="https://www.superdocker.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
