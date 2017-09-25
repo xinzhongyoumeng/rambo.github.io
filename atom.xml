@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-09-12T14:13:44.537Z</updated>
+  <updated>2017-09-25T15:08:53.307Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.superdocker.cn/2017/09/25/Disk%20format%20choise/"/>
+    <id>https://www.superdocker.cn/2017/09/25/Disk format choise/</id>
+    <published>2017-09-25T15:08:53.307Z</published>
+    <updated>2017-09-25T15:08:53.307Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;磁盘文件系统的选择&quot;&gt;&lt;a href=&quot;#磁盘文件系统的选择&quot; class=&quot;headerlink&quot; title=&quot;磁盘文件系统的选择&quot;&gt;&lt;/a&gt;磁盘文件系统的选择&lt;/h1&gt;&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; 
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>部署Ceph及与OpenStack结合</title>
