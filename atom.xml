@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-08-29T02:15:44.276Z</updated>
+  <updated>2017-10-12T02:29:29.640Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>部署Ceph及与OpenStack结合</title>
+    <link href="https://www.superdocker.cn/2017/10/11/install%20Ceph%20and%20OpenStack/"/>
+    <id>https://www.superdocker.cn/2017/10/11/install Ceph and OpenStack/</id>
+    <published>2017-10-12T02:29:29.640Z</published>
+    <updated>2017-10-12T02:29:29.640Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot;&gt;&lt;a href=&quot;#声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot; class=&quot;headerlink&quot; title=&quot;声明：本安装文档以CentOS 7+ 或 Ubunt
+    
+    </summary>
+    
+      <category term="Ceph" scheme="https://www.superdocker.cn/categories/Ceph/"/>
+    
+    
+      <category term="Ceph" scheme="https://www.superdocker.cn/tags/Ceph/"/>
+    
+      <category term="OpenStack" scheme="https://www.superdocker.cn/tags/OpenStack/"/>
+    
+  </entry>
   
   <entry>
     <title>安装Docker</title>
@@ -33,26 +55,6 @@
     
     
       <category term="安装" scheme="https://www.superdocker.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>部署Ceph及与OpenStack结合</title>
-    <link href="https://www.superdocker.cn/2017/10/11/install%20Ceph%20and%20OpenStack/"/>
-    <id>https://www.superdocker.cn/2017/10/11/install Ceph and OpenStack/</id>
-    <published>2017-10-12T02:14:47.795Z</published>
-    <updated>2017-10-12T02:14:47.795Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot;&gt;&lt;a href=&quot;#声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot; class=&quot;headerlink&quot; title=&quot;声明：本安装文档以CentOS 7+ 或 Ubunt
-    
-    </summary>
-    
-      <category term="Ceph" scheme="https://www.superdocker.cn/categories/Ceph/"/>
-    
-    
-      <category term="Ceph" scheme="https://www.superdocker.cn/tags/Ceph/"/>
     
   </entry>
   
