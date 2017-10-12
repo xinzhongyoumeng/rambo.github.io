@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-10-12T03:03:43.069Z</updated>
+  <updated>2017-10-12T01:11:42.484Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,49 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>部署Ceph及与OpenStack结合</title>
-    <link href="https://www.superdocker.cn/2017/10/11/install%20Ceph%20and%20OpenStack/"/>
-    <id>https://www.superdocker.cn/2017/10/11/install Ceph and OpenStack/</id>
-    <published>2017-10-12T03:03:43.069Z</published>
-    <updated>2017-10-12T03:03:43.069Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot;&gt;&lt;a href=&quot;#声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot; class=&quot;headerlink&quot; title=&quot;声明：本安装文档以CentOS 7+ 或 Ubunt
-    
-    </summary>
-    
-      <category term="Ceph" scheme="https://www.superdocker.cn/categories/Ceph/"/>
-    
-    
-      <category term="Ceph" scheme="https://www.superdocker.cn/tags/Ceph/"/>
-    
-      <category term="OpenStack" scheme="https://www.superdocker.cn/tags/OpenStack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安装Docker</title>
-    <link href="https://www.superdocker.cn/2017/10/11/install%20Docker/"/>
-    <id>https://www.superdocker.cn/2017/10/11/install Docker/</id>
-    <published>2017-10-12T02:15:00.247Z</published>
-    <updated>2017-08-29T02:15:44.276Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;em&gt;声明：本安装文档以Ubuntu14.04为基础&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h3&gt;&lt;h4 id=&quot;1-更新系统&quot;&gt;&lt;a href=&quot;
-    
-    </summary>
-    
-      <category term="Docker" scheme="https://www.superdocker.cn/categories/Docker/"/>
-    
-    
-      <category term="安装" scheme="https://www.superdocker.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-  </entry>
   
   <entry>
     <title>数据库问题集锦</title>
@@ -100,6 +57,28 @@
   </entry>
   
   <entry>
+    <title>部署Ceph及与OpenStack结合</title>
+    <link href="https://www.superdocker.cn/2017/09/25/install%20Ceph%20and%20OpenStack/"/>
+    <id>https://www.superdocker.cn/2017/09/25/install Ceph and OpenStack/</id>
+    <published>2017-09-25T13:35:06.000Z</published>
+    <updated>2017-10-12T03:06:23.753Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot;&gt;&lt;a href=&quot;#声明：本安装文档以CentOS-7-或-Ubuntu-14-为基础&quot; class=&quot;headerlink&quot; title=&quot;声明：本安装文档以CentOS 7+ 或 Ubunt
+    
+    </summary>
+    
+      <category term="Ceph" scheme="https://www.superdocker.cn/categories/Ceph/"/>
+    
+    
+      <category term="Ceph" scheme="https://www.superdocker.cn/tags/Ceph/"/>
+    
+      <category term="OpenStack" scheme="https://www.superdocker.cn/tags/OpenStack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub+Hexo的配置和使用</title>
     <link href="https://www.superdocker.cn/2017/07/05/GitHubPages&amp;HexoGuide/"/>
     <id>https://www.superdocker.cn/2017/07/05/GitHubPages&amp;HexoGuide/</id>
@@ -122,6 +101,27 @@
       <category term="GitHub" scheme="https://www.superdocker.cn/tags/GitHub/"/>
     
       <category term="配置" scheme="https://www.superdocker.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装Docker</title>
+    <link href="https://www.superdocker.cn/2017/06/05/install%20Docker/"/>
+    <id>https://www.superdocker.cn/2017/06/05/install Docker/</id>
+    <published>2017-06-05T15:31:06.000Z</published>
+    <updated>2017-10-12T03:05:43.588Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;声明：本安装文档以Ubuntu14.04为基础&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h3&gt;&lt;h4 id=&quot;1-更新系统&quot;&gt;&lt;a href=&quot;
+    
+    </summary>
+    
+      <category term="Docker" scheme="https://www.superdocker.cn/categories/Docker/"/>
+    
+    
+      <category term="安装" scheme="https://www.superdocker.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
