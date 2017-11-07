@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-10-12T01:11:42.484Z</updated>
+  <updated>2017-11-07T12:53:44.350Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS-Base.repo原生源</title>
+    <link href="https://www.superdocker.cn/2017/11/05/centos7_native_repo/"/>
+    <id>https://www.superdocker.cn/2017/11/05/centos7_native_repo/</id>
+    <published>2017-11-05T15:31:06.000Z</published>
+    <updated>2017-11-07T12:53:44.350Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;声明：&lt;/em&gt; Centos7原生的CentOS-Base.repo,编辑/etc/yum.repos.d/CentOS-Base.repo文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
+    
+    </summary>
+    
+      <category term="tools" scheme="https://www.superdocker.cn/categories/tools/"/>
+    
+    
+      <category term="工具" scheme="https://www.superdocker.cn/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>数据库问题集锦</title>
