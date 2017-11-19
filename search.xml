@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[dos2unix - 将DOS格式文本文件转换成UNIX格式]]></title>
+    <url>%2F2017%2F11%2F12%2Funix2dos%2F</url>
+    <content type="text"><![CDATA[dos2unix - 将DOS格式文本文件转换成UNIX格式使用背景：执行从win拷贝至linux中的一个脚本报错： -bash: ./job.sh: /bin/sh^M: bad interpreter: 没有那个文件或目录 原因： DOS格式的脚本文件时无法解释执行的，因为脚本文件的第一行是用来指定解释器的，Linux系统认为解释器是/bin/sh^M，而不是/bin/sh。 用途说明dos2unix命令用来将DOS格式的文本文件转换成UNIX格式的（DOS/MAC to UNIX text file format converter）。DOS下的文本文件是以\r\n作为断行标志的，表示成十六进制就是0D 0A。而Unix下的文本文件是以\n作为断行标志的，表示成十六进制就是 0A。 常用参数将DOS格式文本文件转换成Unix格式，最简单的用法就是dos2unix直接跟上文件名。 格式：dos2unix file 如果一次转换多个文件，把这些文件名直接跟在dos2unix之后。（注：也可以加上-o参数，也可以不加，效果一样） 格式：dos2unix file1 file2 file3 格式：dos2unix -o file1 file2 file3 上面在转换时，都会直接在原来的文件上修改，如果想把转换的结果保存在别的文件，而源文件不变，则可以使用-n参数。 格式：dos2unix -n oldfile newfile 如果要保持文件时间戳不变，加上-k参数。所以上面几条命令都是可以加上-k参数来保持文件时间戳的。 格式：dos2unix -k file 格式：dos2unix -k file1 file2 file3 格式：dos2unix -k -o file1 file2 file3 格式：dos2unix -k -n oldfile newfile 注：unix2dos命令的使用方式与dos2unix命令的类似。 转载自：http://codingstandards.iteye.com/blog/810900]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CentOS-Base.repo原生源]]></title>
     <url>%2F2017%2F11%2F05%2Fcentos7_native_repo%2F</url>
     <content type="text"><![CDATA[声明： Centos7原生的CentOS-Base.repo,编辑/etc/yum.repos.d/CentOS-Base.repo文件 12345678910111213141516171819202122232425262728293031323334353637383940414243# CentOS-Base.repo## The mirror system uses the connecting IP address of the client and the# update status of each mirror to pick mirrors that are updated to and# geographically close to the client. You should use this for CentOS updates# unless you are manually picking other mirrors.## If the mirrorlist= does not work for you, as a fall back you can try the# remarked out baseurl= line instead.##[base]name=CentOS-$releasever - Basemirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os&amp;infra=$infra#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/gpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7#released updates[updates]name=CentOS-$releasever - Updatesmirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates&amp;infra=$infra#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/gpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7#additional packages that may be useful[extras]name=CentOS-$releasever - Extrasmirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras&amp;infra=$infra#baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/gpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7#additional packages that extend functionality of existing packages[centosplus]name=CentOS-$releasever - Plusmirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus&amp;infra=$infra#baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/gpgcheck=1enabled=0gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7]]></content>

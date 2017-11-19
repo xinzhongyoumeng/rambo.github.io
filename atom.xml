@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-11-07T12:53:44.350Z</updated>
+  <updated>2017-11-19T06:48:14.948Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>dos2unix - 将DOS格式文本文件转换成UNIX格式</title>
+    <link href="https://www.superdocker.cn/2017/11/12/unix2dos/"/>
+    <id>https://www.superdocker.cn/2017/11/12/unix2dos/</id>
+    <published>2017-11-12T13:35:06.000Z</published>
+    <updated>2017-11-19T06:48:14.948Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;dos2unix-将DOS格式文本文件转换成UNIX格式&quot;&gt;&lt;a href=&quot;#dos2unix-将DOS格式文本文件转换成UNIX格式&quot; class=&quot;headerlink&quot; title=&quot;dos2unix - 将DOS格式文本文件转换成UNIX格式&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://www.superdocker.cn/categories/Linux/"/>
+    
+    
+      <category term="tools" scheme="https://www.superdocker.cn/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS-Base.repo原生源</title>
