@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superdocker.cn/"/>
-  <updated>2017-11-19T06:48:14.948Z</updated>
+  <updated>2018-01-07T12:31:10.564Z</updated>
   <id>https://www.superdocker.cn/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何向OpenStack社区贡献代码</title>
+    <link href="https://www.superdocker.cn/2017/12/16/contribute%20openstack/"/>
+    <id>https://www.superdocker.cn/2017/12/16/contribute openstack/</id>
+    <published>2017-12-16T12:35:06.000Z</published>
+    <updated>2018-01-07T12:31:10.564Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;如何向OpenStack社区贡献代码&quot;&gt;&lt;a href=&quot;#如何向OpenStack社区贡献代码&quot; class=&quot;headerlink&quot; title=&quot;如何向OpenStack社区贡献代码&quot;&gt;&lt;/a&gt;如何向OpenStack社区贡献代码&lt;/h1&gt;&lt;h3 id=&quot;1
+    
+    </summary>
+    
+      <category term="OpenStack" scheme="https://www.superdocker.cn/categories/OpenStack/"/>
+    
+    
+      <category term="OpenStack" scheme="https://www.superdocker.cn/tags/OpenStack/"/>
+    
+  </entry>
   
   <entry>
     <title>dos2unix - 将DOS格式文本文件转换成UNIX格式</title>
