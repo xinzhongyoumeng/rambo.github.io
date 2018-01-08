@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git3.1 安装">
+<meta name="description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git(先下载代码">
 <meta name="keywords" content="OpenStack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何向OpenStack社区贡献代码">
 <meta property="og:url" content="https://www.superdocker.cn/2017/12/16/contribute openstack/index.html">
 <meta property="og:site_name" content="Rambo&#39;s Blog">
-<meta property="og:description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git3.1 安装">
-<meta property="og:updated_time" content="2018-01-07T12:36:17.832Z">
+<meta property="og:description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git(先下载代码">
+<meta property="og:updated_time" content="2018-01-08T10:06:57.576Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何向OpenStack社区贡献代码">
-<meta name="twitter:description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git3.1 安装">
+<meta name="twitter:description" content="如何向OpenStack社区贡献代码1. 创建账号创建一个 Launchpad（https://launchpad.net）账号 1.2 登录（https://review.openstack.org），这里会使用Launchpad账号登录。 2. 设置账户信息参考:http://www.cnblogs.com/openstackteam/p/6108767.html 3. 设置git(先下载代码">
 
 
 
@@ -412,7 +412,7 @@
         <h1 id="如何向OpenStack社区贡献代码"><a href="#如何向OpenStack社区贡献代码" class="headerlink" title="如何向OpenStack社区贡献代码"></a>如何向OpenStack社区贡献代码</h1><h3 id="1-创建账号"><a href="#1-创建账号" class="headerlink" title="1. 创建账号"></a>1. 创建账号</h3><p>创建一个 Launchpad（<a href="https://launchpad.net/openstack" target="_blank" rel="external">https://launchpad.net</a>）账号</p>
 <p>1.2 登录（<a href="https://review.openstack.org/" target="_blank" rel="external">https://review.openstack.org</a>），这里会使用Launchpad账号登录。</p>
 <h3 id="2-设置账户信息"><a href="#2-设置账户信息" class="headerlink" title="2. 设置账户信息"></a>2. 设置账户信息</h3><p>参考:<a href="http://www.cnblogs.com/openstackteam/p/6108767.html" target="_blank" rel="external">http://www.cnblogs.com/openstackteam/p/6108767.html</a></p>
-<h3 id="3-设置git"><a href="#3-设置git" class="headerlink" title="3. 设置git"></a>3. 设置git</h3><p>3.1 安装git与git-review</p>
+<h3 id="3-设置git-先下载代码，后配置git"><a href="#3-设置git-先下载代码，后配置git" class="headerlink" title="3. 设置git(先下载代码，后配置git)"></a>3. 设置git(先下载代码，后配置git)</h3><p>3.1 安装git与git-review</p>
 <p>3.2 设置git信息</p>
 <p><code># 与Launchpad账号信息一致</code></p>
 <p><code>git config --global user.name ``&quot;Firstname Lastname&quot;</code></p>
@@ -465,6 +465,7 @@
 <p>6.6 如果导致自动测试失败的不是自己的代码问题，则可以在回复一个recheck或recheck no bug，将所有测试项重新测试一遍。单个项目的recheck可根据该测试项提示的内容操作。</p>
 <p>6.7 如果自动测试项目通过，所有测试项都review+1，就可以让其他开发者进行review，普通review只能+1，核心开发者可以+2，当提交的代码收到2个核心开发者+2后，就能Merge到目标分支.</p>
 <h3 id="6-git-review提交代码失败的解决方法"><a href="#6-git-review提交代码失败的解决方法" class="headerlink" title="6. git-review提交代码失败的解决方法"></a>6. git-review提交代码失败的解决方法</h3><p><a href="http://kiwik.github.io/openstack/2014/08/26/git-review%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95" target="_blank" rel="external">http://kiwik.github.io/openstack/2014/08/26/git-review%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95</a></p>
+<p>修改author方法：git commit –amend –author=”MrRambo <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x6c;&#x69;&#106;&#105;&#x65;&#x40;&#117;&#x6e;&#105;&#x74;&#101;&#100;&#x73;&#116;&#97;&#x63;&#x6b;&#x2e;&#x63;&#111;&#109;">&#x6c;&#x69;&#106;&#105;&#x65;&#x40;&#117;&#x6e;&#105;&#x74;&#101;&#100;&#x73;&#116;&#97;&#x63;&#x6b;&#x2e;&#x63;&#111;&#109;</a>“</p>
 
       
     </div>
@@ -721,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何向OpenStack社区贡献代码"><span class="nav-number">1.</span> <span class="nav-text">如何向OpenStack社区贡献代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-创建账号"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 创建账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设置账户信息"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 设置账户信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-设置git"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 设置git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-修改代码"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 修改代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-提交代码"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. 提交代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-review代码"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. review代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-git-review提交代码失败的解决方法"><span class="nav-number">1.0.7.</span> <span class="nav-text">6. git-review提交代码失败的解决方法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何向OpenStack社区贡献代码"><span class="nav-number">1.</span> <span class="nav-text">如何向OpenStack社区贡献代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-创建账号"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 创建账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设置账户信息"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 设置账户信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-设置git-先下载代码，后配置git"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 设置git(先下载代码，后配置git)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-修改代码"><span class="nav-number">1.0.4.</span> <span class="nav-text">4. 修改代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-提交代码"><span class="nav-number">1.0.5.</span> <span class="nav-text">5. 提交代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-review代码"><span class="nav-number">1.0.6.</span> <span class="nav-text">6. review代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-git-review提交代码失败的解决方法"><span class="nav-number">1.0.7.</span> <span class="nav-text">6. git-review提交代码失败的解决方法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
